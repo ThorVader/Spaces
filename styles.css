@@ -2,3 +2,39 @@
     justify-content: end;
     align-items: end;
 }
+
+.search-bar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure search bar stays on top of carousel */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-container {
+    margin-top: 50px; /* Adjust margin to accommodate search bar height */
+}
+
+
+
+
+.overlay-container {
+    position: relative;
+    width: 100%;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
